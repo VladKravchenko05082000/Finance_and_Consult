@@ -1,0 +1,229 @@
+@charset "UTF-8";
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  font-family: Montserrat;
+  display: flex;
+  flex-direction: column; }
+
+._container {
+  max-width: 1046px;
+  margin: 0px auto;
+  padding: 0px 15px; }
+
+.page {
+  flex: 1 1 auto; }
+
+._ibg {
+  position: relative; }
+
+._ibg img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  object-fit: cover; }
+
+body {
+  font-weight: 500;
+  color: #252B42; }
+
+* {
+  margin: 0px;
+  padding: 0px;
+  border: 0px; }
+
+/* Указываем box sizing(указываем размер блока)*/
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* Убираем линии обводки у некоторых браузеров*/
+:focus, active {
+  outline: none; }
+
+a:focus, a:active {
+  outline: none; }
+
+/* Делаем основные теги блочными */
+nav, footer, aside, header {
+  display: block; }
+
+/* Уравниваем поведение шрифтов чтобы небыло различие в разных браузерах */
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; }
+
+/*наследование семейство шрифта, стандартного */
+input,
+button,
+textarea {
+  font-family: inherit; }
+
+/*убираем особености дэбильные в разных браузерах */
+input::-ms-clear {
+  display: none; }
+
+button {
+  cursor: pointer; }
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0; }
+
+a,
+a:visited {
+  text-decoration: none; }
+
+a:hover {
+  text-decoration: none; }
+
+ul li {
+  list-style: none; }
+
+img {
+  vertical-align: top; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400; }
+
+.header {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 50; }
+  .header__container {
+    display: flex;
+    min-height: 104px;
+    align-items: center; }
+    @media (max-width: 467px) {
+      .header__container {
+        min-height: 70px; } }
+  .header__logo {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 133.33333%;
+    color: inherit; }
+
+.header__menu {
+  margin: 0px 0px 0px 133px; }
+
+.header__menu__list {
+  display: flex; }
+
+.header__menu__item:not(:last-child) {
+  margin: 0px 21px 0px 0px; }
+
+.header__menu__link {
+  color: #737373;
+  line-height: 171.42857%;
+  font-weight: 600; }
+
+.header__menu__link:hover {
+  color: #ffd700; }
+
+.header__burger {
+  display: none; }
+
+@media (max-width: 767px) {
+  .header__menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #4B2525;
+    top: -100%;
+    z-index: 50;
+    margin: 0px 0px 0px 0px;
+    text-align: center;
+    transition: all 0.3s ease 0s; }
+  .header__container {
+    justify-content: space-around; }
+  .header__menu__list {
+    display: block;
+    padding: 70px 0px 0px 0px; }
+  .header__menu__link {
+    color: white;
+    font-size: 18px; }
+  .header__menu__item:not(:last-child) {
+    margin: 0px 0px 21px 0px; }
+  .header__burger {
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 20px;
+    z-index: 50; }
+  .header__burger span {
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background-color: #000;
+    left: 0;
+    top: 8px;
+    transition: all 0.3s ease 0s; }
+  .header__burger::after,
+  .header__burger::before {
+    content: '';
+    background-color: #000;
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    left: 0;
+    transition: all 0.3s ease 0s; }
+  .header__burger::before {
+    top: 0; }
+  .header__burger::after {
+    bottom: 0; }
+  .header__burger.active::before {
+    transform: rotate(45deg);
+    top: 8px; }
+  .header__burger.active::after {
+    transform: rotate(-45deg);
+    bottom: 8px; }
+  .header__burger.active span {
+    display: none; }
+  .header__menu.active {
+    top: 0; } }
+
+.main-block {
+  position: relative; }
+  .main-block__body {
+    padding: 184px 0px 191px 0px;
+    position: relative;
+    z-index: 2;
+    max-width: 509px; }
+  .main-block__body > *:not(:last-child) {
+    margin: 0px 0px 35px 0px; }
+  .main-block__title {
+    font-size: 58px;
+    font-weight: 800;
+    line-height: 137.93103%; }
+  .main-block__text {
+    color: #737373;
+    font-size: 20px;
+    line-height: 150%; }
+  .main-block__image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0; }
