@@ -29,7 +29,48 @@
    object-fit: cover;
 }
 
+.header__block {
+   text-align: center;
+}
+.header__block__title {
+   letter-spacing: 0.2px;
+   font-size: 40px;
+   line-height: 57/40 * 100%;
+   font-weight: 700;
+   padding: 0px 0px 10px 0px;
+}
+.header__block__text {
+   font-weight: 500;
+   color: #737373;
+   letter-spacing: 0.2px;
+   line-height: 20/14 * 100%;
+   max-width: 511px;
+   margin: 0px auto;
+}
+
+@media (max-width:992px) {
+   .header__block__title{
+      font-size: 35px;
+   }
+   .header__block__text{
+      font-size: 12px;
+   }
+}
+
+@media (max-width:767px) {
+   .header__block__title{
+      font-size: 30px;
+   }
+}
+
 body{
    font-weight: 500;
    color: #252B42;
+   background: #FAFAFA;
+}
+
+@media (max-width:767px) {
+   body.lock{
+      overflow: hidden;
+   }
 }
