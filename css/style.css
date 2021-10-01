@@ -285,7 +285,8 @@ h6 {
     cursor: pointer;
     font-weight: 700;
     text-align: center;
-    margin: 10px 0px; }
+    margin: 10px 0px;
+    transition: all 0.3s ease 0s; }
     @media (max-width: 480px) {
       .main-block__button {
         flex: 1 1 100%; } }
@@ -704,6 +705,8 @@ h6 {
     font-weight: 400;
     color: #fff;
     padding: 0px 22px; }
+  .subscribe__button:hover {
+    background: #fc4700; }
 
 .subscribe::before {
   content: '';
@@ -718,3 +721,146 @@ h6 {
 @media (max-width: 810px) {
   .subscribe::before {
     display: none; } }
+
+.get-in-touch {
+  padding: 80px 0px 135px 0px; }
+  @media (max-width: 660px) {
+    .get-in-touch {
+      padding: 80px 0px 65px 0px; } }
+  .get-in-touch__body {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; }
+  .get-in-touch__item {
+    margin: 0px 0px 0px 5px; }
+    @media (max-width: 1006px) {
+      .get-in-touch__item {
+        margin: 0px 0px 20px 15px; } }
+    @media (max-width: 470px) {
+      .get-in-touch__item {
+        margin: 0px 0px 20px 0px; } }
+    .get-in-touch__item__body {
+      padding: 50px 0px 0px 0px;
+      flex: 0 1 320px;
+      text-align: center;
+      height: 333px;
+      background: #FFFFFF;
+      cursor: pointer; }
+      @media (max-width: 1006px) {
+        .get-in-touch__item__body {
+          background: #252B42;
+          color: white; } }
+      @media (max-width: 470x) {
+        .get-in-touch__item__body {
+          height: 250px; } }
+    .get-in-touch__item__body:hover {
+      height: 393px;
+      background: #252B42;
+      color: white; }
+    .get-in-touch__item__text {
+      margin: -50px 0px 0px 0px; }
+      .get-in-touch__item__text p:not(:last-child) {
+        padding: 0px 0px 10px 0px; }
+    .get-in-touch__item__text:hover {
+      text-decoration: underline; }
+    .get-in-touch__item__title {
+      padding: 15px 0px;
+      letter-spacing: 0.1px;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 150%; }
+    .get-in-touch__item__button {
+      padding: 10px 20px;
+      min-height: 44px;
+      color: #FF7B47;
+      font-weight: 600;
+      line-height: 171.42857%;
+      border: 1px solid #FF7B47;
+      border-radius: 5px;
+      background-color: transparent;
+      transition: all 0.3s ease 0s; }
+    .get-in-touch__item__button:hover {
+      background-color: #ff4800; }
+
+.get-in-touch__header {
+  margin: 0px 0px 110px 0px; }
+
+@media (max-width: 1006px) {
+  .get-in-touch__header {
+    margin: 0px 0px 70px 0px; } }
+
+@media (max-width: 660px) {
+  .get-in-touch__header {
+    margin: 0px 0px 30px 0px; } }
+
+.get-in-touch__item__body:hover .get-in-touch__item__button {
+  border: 1px solid #fff;
+  color: #fff; }
+
+.phone {
+  position: relative;
+  left: 35%; }
+
+.geo {
+  position: relative;
+  left: 40%; }
+
+.telegram {
+  position: relative;
+  left: 35%; }
+
+.get-in-touch__item__body:hover svg * {
+  fill: #fff; }
+
+.contact {
+  background-color: white;
+  padding: 142px 0px 42px 0px; }
+  @media (max-width: 767px) {
+    .contact {
+      padding: 71px 0px 42px 0px; } }
+  @media (max-width: 400px) {
+    .contact {
+      padding: 50px 0px 22px 0px; } }
+  @media (min-width: 767px) {
+    .contact__body {
+      display: flex;
+      justify-content: space-between;
+      align-items: center; } }
+  .contact__content {
+    padding: 0px 20px; }
+    @media (max-width: 345px) {
+      .contact__content {
+        padding: 0px 0px; } }
+  .contact__title {
+    letter-spacing: 0.1px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 133.33333%; }
+  .contact__text {
+    letter-spacing: 0.2px;
+    color: #737373;
+    padding: 10px 0px 0px 0px; }
+  .contact__button {
+    text-align: center;
+    height: 58px;
+    background: #FF7B47;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 0.2px;
+    padding: 15px 40px;
+    color: #FFFFFF;
+    letter-spacing: 0.2px;
+    font-weight: 700;
+    line-height: 200%;
+    transition: all 0.3s ease 0s; }
+    @media (max-width: 767px) {
+      .contact__button {
+        margin: 15px 0px 0px 0px; } }
+    @media (max-width: 400px) {
+      .contact__button {
+        margin: 25px 0px 0px 0px; } }
+  .contact__button:hover {
+    background: #ff4800; }
