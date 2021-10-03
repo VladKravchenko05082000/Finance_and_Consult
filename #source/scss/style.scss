@@ -958,6 +958,152 @@
    }
 }
 
+.footer {
+
+   &__top {
+      background: #17213C;
+      padding: 50px 0px;
+   }
+
+   &__main {
+      
+   }
+
+   &__row{
+      display: flex;
+      margin: 0px -15px;
+      flex-wrap: wrap;
+   }
+
+   &__column {
+      padding: 0px 15px;
+      flex: 0 1 16.667%;
+      cursor: pointer;
+      min-width: 170px;
+      @media (max-width:992px) {
+         flex: 0 1 25%;
+      }
+      @media (max-width:680px) {
+         flex: 0 1 50%;
+      }
+   }
+
+   &__column:last-child{
+      flex: 0 1 33.334%;
+      @media (max-width:992px) {
+         flex: 1 1 100%;
+      }
+   }
+
+   &__title {
+      color: #FFFFFF;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 24/16 * 100%;
+      letter-spacing: 0.1px;
+      padding: 0px 0px 20px 0px;
+   }
+
+
+   &__menu {
+   }
+
+   &__list {
+   }
+
+   &__item {
+      padding: 0px 0px 10px 0px;
+   }
+
+   &__item:last-child {
+      padding: 0px 0px 40px 0px;
+   }
+
+   &__link {
+      font-weight: 600;
+      letter-spacing: 0.2px;
+      color: #FFFFFF;
+   }
+
+   &__link:hover{
+      text-decoration: underline;
+   }
+
+   &__contacts{
+      display: flex;
+      flex-direction: column;
+   }
+
+   &__bottom {
+      padding: 25px 0px;
+   }
+
+   &__container {
+      text-align: center;
+      @media (min-width:768px) {
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+      }
+   }
+
+   &__copy {
+      color:#737373;
+      font-weight: 600;
+      letter-spacing: 0.2px;
+   }
+
+   &__social{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      @media (max-width:768px) {
+         padding: 10px 0px 0px 0px;
+      }
+   }
+
+   &__social img{
+      margin: 0px 0px 0px 20px;
+   }
+}
+
+.footer__contacts__item{
+   display: flex;
+   align-items: center;
+   min-height: 30px;
+   padding: 0px 0px 0px 34px;
+   margin: 0px 0px 12px 0px;
+   color: #FFFFFF;
+   letter-spacing: 0.2px;
+   font-weight: 600;
+}
+
+.footer__contacts__item:hover{
+   text-decoration: underline;
+}
+
+
+.footer_phone {
+   background-image: url("../../image/footer_img/phone.png");
+   background-repeat: no-repeat;
+   background-position: 0 0 ;
+}
+.footer_geo {
+   background-image: url("../../image/footer_img/Geo.png");
+   background-repeat: no-repeat;
+   background-position: 0 0;
+}
+.footer_email {
+   background-image: url("../../image/footer_img/telegram.png");
+   background-repeat: no-repeat;
+   background-position: 0 0;
+}
+
+
+   
+
+
+
 
 
 

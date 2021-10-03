@@ -864,3 +864,111 @@ h6 {
         margin: 25px 0px 0px 0px; } }
   .contact__button:hover {
     background: #ff4800; }
+
+.footer__top {
+  background: #17213C;
+  padding: 50px 0px; }
+
+.footer__row {
+  display: flex;
+  margin: 0px -15px;
+  flex-wrap: wrap; }
+
+.footer__column {
+  padding: 0px 15px;
+  flex: 0 1 16.667%;
+  cursor: pointer;
+  min-width: 170px; }
+  @media (max-width: 992px) {
+    .footer__column {
+      flex: 0 1 25%; } }
+  @media (max-width: 680px) {
+    .footer__column {
+      flex: 0 1 50%; } }
+
+.footer__column:last-child {
+  flex: 0 1 33.334%; }
+  @media (max-width: 992px) {
+    .footer__column:last-child {
+      flex: 1 1 100%; } }
+
+.footer__title {
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.1px;
+  padding: 0px 0px 20px 0px; }
+
+.footer__item {
+  padding: 0px 0px 10px 0px; }
+
+.footer__item:last-child {
+  padding: 0px 0px 40px 0px; }
+
+.footer__link {
+  font-weight: 600;
+  letter-spacing: 0.2px;
+  color: #FFFFFF; }
+
+.footer__link:hover {
+  text-decoration: underline; }
+
+.footer__contacts {
+  display: flex;
+  flex-direction: column; }
+
+.footer__bottom {
+  padding: 25px 0px; }
+
+.footer__container {
+  text-align: center; }
+  @media (min-width: 768px) {
+    .footer__container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center; } }
+
+.footer__copy {
+  color: #737373;
+  font-weight: 600;
+  letter-spacing: 0.2px; }
+
+.footer__social {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  @media (max-width: 768px) {
+    .footer__social {
+      padding: 10px 0px 0px 0px; } }
+
+.footer__social img {
+  margin: 0px 0px 0px 20px; }
+
+.footer__contacts__item {
+  display: flex;
+  align-items: center;
+  min-height: 30px;
+  padding: 0px 0px 0px 34px;
+  margin: 0px 0px 12px 0px;
+  color: #FFFFFF;
+  letter-spacing: 0.2px;
+  font-weight: 600; }
+
+.footer__contacts__item:hover {
+  text-decoration: underline; }
+
+.footer_phone {
+  background-image: url("../../image/footer_img/phone.png");
+  background-repeat: no-repeat;
+  background-position: 0 0; }
+
+.footer_geo {
+  background-image: url("../../image/footer_img/Geo.png");
+  background-repeat: no-repeat;
+  background-position: 0 0; }
+
+.footer_email {
+  background-image: url("../../image/footer_img/telegram.png");
+  background-repeat: no-repeat;
+  background-position: 0 0; }
